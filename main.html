@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Russian Outdoor Group</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu-main li a").each(function() {
+                console.log($(this).height());
+                var m = (115-$(this).height())/2-4;
+                console.log(m);
+                $(this).css({'margin-top': m});
+            });
+        });
+
+    </script>
+
+
+</head>
+<body>
+    <div id="body-container">
+        <div id="header">
+            <a href="/" id="logo">
+                <img src='img/logo.png'>
+            </a>
+        <div>
+            <h2>Russian Outdoor Group</h2>
+            <p>Поддерживать, развивать и объединять
+            <br/>Outdoor сообщество</p>
+        </div>
+        <p class="welcome">Добро пожаловать,<span class="orange">Гость</span></p>
+        <ul id="menu-header">
+            <li class="first">
+                <div class="left-adge"></div>
+                <a href="#">О нас</a>
+                <div class="right-adge"></div>
+            </li>
+            <li>
+                <div class="left-adge"></div>
+                <a href="#">Форум</a>
+                <div class="right-adge"></div>
+            </li>
+            <li>
+                <div class="left-adge"></div>
+                <a href="#">Наши партнеры</a>
+                <div class="right-adge"></div>
+            </li>
+            <li class=" last">
+                <div class="left-adge"></div>
+                <a href="#">Контакты</a>
+                <div class="right-adge"></div>
+            </li>
+        </ul>
+        </div>
+        <div class="clear"></div>
+        <div id="content">
+            <div class="banner-main">
+                <a class="left-arrow"></a>
+                <a class="right-arrow"></a>
+                <img width="1193" src='img/slider-baner.png'>
+                <div class="button">
+                    <a href="#">подробнее</a>
+                    <div></div>
+                </div>
+                <ul class="menu-main">
+                    <li class="first">
+                        <a href="#">Календарь событий по России и миру</a>
+                    </li>
+                    <li class="active">
+                        <div class="top"></div>
+                        <a href="#">Наша Россия и весь мир</a>
+                    </li>
+                    <li>
+                        <a href="#">Снаряжение, технологии, тесты</a>
+                    </li>
+                    <li>
+                        <a href="#">Люди и профессионалы</a>
+                    </li>
+                    <li>
+                        <a href="#">Для души</a>
+                    </li>
+                    <li class="last">
+                        <a href="#">Законы, постановления и тендеры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="posters">
+                <div>
+                    <h3>7 Ноября 2013</h3>
+                    <h4><a href="#">На нашем сайте появился новый раздел Для души, где Вы можете подобрать для себя много чего
+                        интересного и необычного</a></h4>
+                </div>
+                <div>
+                    <h3>7 Ноября 2013</h3>
+                    <h4><a href="#">Начало мероприятий Outdoor France DVC 2013 состоится 26 декабря, приглашаем всех желающих</a></h4>
+                </div>
+                <div class="last">
+                    <h3>7 Ноября 2013</h3>
+                    <h4><a href="#">Скоро состоится незабываемое мероприятиу Outdoor World Life. Обсуждаем это
+                        событие на форуме</a></h4>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        </div>
+        <div id="footer">
+        <ul id="menu-footer">
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">О нас</a>
+                    </li>
+                    <li >
+                        <a href="#">Наши партнеры</a>
+                    </li>
+                    <li >
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">Новости</a>
+                    </li>
+                    <li >
+                        <a href="#">Наша Россия</a>
+                    </li>
+                    <li >
+                        <a href="#">Технологии</a>
+                    </li>
+                    <li >
+                        <a href="#">Профессионалы</a>
+                    </li>
+                    <li >
+                        <a href="#">Для души</a>
+                    </li>
+                    <li >
+                        <a href="#">Законы</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">События</a>
+                    </li>
+                    <li >
+                        <a href="#">Предзаказы</a>
+                    </li>
+                    <li >
+                        <a href="#">Фестивали</a>
+                    </li>
+                    <li >
+                        <a href="#">Соревнования</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">Форум</a>
+                    </li>
+                    <li >
+                        <a href="#">Группа Вконтакте</a>
+                    </li>
+                    <li >
+                        <a href="#">Группа Facebook</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+    <div class="clear"></div>
+    <div class="copyright">
+        <p><span>&copy; 2009-2013</span>"Russian Outdoor Group"</p>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>

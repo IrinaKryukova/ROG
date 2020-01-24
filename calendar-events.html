@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Календарь событий</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="cusel.css" />
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="cusel-min-2.5.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        cuSel({
+            changedEl: "#country-select",
+            scrollArrows: false
+        });
+
+        cuSel({
+            changedEl: "#city-select",
+            scrollArrows: false
+        });
+
+        cuSel({
+            changedEl: "#month-select",
+            scrollArrows: false
+        });
+
+        cuSel({
+            changedEl: "#year-select",
+            scrollArrows: false
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="body-container">
+        <div id="header">
+            <a href="/" id="logo">
+                <img src='img/logo.png'>
+            </a>
+        <div>
+            <h2>Russian Outdoor Group</h2>
+            <p>Поддерживать, развивать и объединять
+            <br/>Outdoor сообщество</p>
+        </div>
+        <p class="welcome">Добро пожаловать,<span class="orange">Гость</span></p>
+        <ul id="menu-header">
+            <li class="first">
+                <div class="left-adge"></div>
+                <a href="#">О нас</a>
+                <div class="right-adge"></div>
+            </li>
+            <li>
+                <div class="left-adge"></div>
+                <a href="#">Форум</a>
+                <div class="right-adge"></div>
+            </li>
+            <li>
+                <div class="left-adge"></div>
+                <a href="#">Наши партнеры</a>
+                <div class="right-adge"></div>
+            </li>
+            <li class=" last">
+                <div class="left-adge"></div>
+                <a href="#">Контакты</a>
+                <div class="right-adge"></div>
+            </li>
+        </ul>
+        </div>
+        <div class="clear"></div>
+
+        <div id="box-content">
+            <div class="top"></div>
+            <div id="left-side">
+                <div class="scene">
+                    <div class="top-topics"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Россия</a>
+                        </li>
+                        <li>
+                            <a href="#">Америка</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Европа</a>
+                        </li>
+                        <li>
+                            <a href="#">Азия</a>
+                        </li>
+                        <li>
+                            <a href="#">Африка</a>
+                        </li>
+                    </ul>
+                    <select id="country-select">
+                        <option value="0" selected="selected">Выберите страну</option>
+                        <option value="1"  >Россия</option>
+                        <option value="2" >Украина</option>
+                    </select>
+                    <select id="city-select">
+                        <option value="0" selected="selected">Выберите город</option>
+                        <option value="1"  >Москва</option>
+                        <option value="2" >Санкт-Петербург</option>
+                    </select>
+
+                    <div class="bottom-topics"></div>
+                </div>
+                <div class="menu-left">
+                    <ul >
+                        <li>
+                            <a href="#">Выставки</a>
+                        </li>
+                        <li>
+                            <a href="#">Презентации и предзаказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Соревнования</a>
+                        </li>
+                        <li>
+                            <a href="#">Фестивали и встречи</a>
+                        </li>
+                        <li>
+                            <a href="#">Для души</a>
+                        </li>
+                        <li>
+                            <a href="#">Другое</a>
+                        </li>
+                    </ul>
+                    <div class="menu-left-bottom"></div>
+                </div>
+                <div class="topics">
+                    <div class="top-topics"></div>
+                    <h3>Горы</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Альпинизм</a>
+                            <span class="green">[5749]</span>
+                        </li>
+                        <li>
+                            <a href="#">Горный туризм</a>
+                            <span class="green">[354]</span>
+                            <img src="img/icon-new-topic.png">
+                        </li>
+                        <li>
+                            <a href="#">Горные лыжи</a>
+                            <span class="green">[1449]</span>
+                        </li>
+                        <li>
+                            <a href="#">base climbing</a>
+                            <span class="green">[36]</span>
+                        </li>
+                    </ul>
+                    <h3>Вода</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Сплав</a>
+                            <span class="green">[229]</span>
+                            <img src="img/icon-new-topic.png">
+                        </li>
+                        <li>
+                            <a href="#">Водный спорт</a>
+                            <span class="green">[564]</span>
+                        </li>
+                        <li>
+                            <a href="#">Виндсерфинг</a>
+                            <span class="green">[322]</span>
+                        </li>
+                        <li>
+                            <a href="#">Каякинг</a>
+                            <span class="green">[319]</span>
+                        </li>
+                        <li>
+                            <a href="#">Парусный спорт</a>
+                            <span class="green">[1782]</span>
+                        </li>
+                        <li>
+                            <a href="#">Подводная охота</a>
+                            <span class="green">[68]</span>
+                            <img src="img/icon-new-topic.png">
+                        </li>
+                        <li>
+                            <a href="#">Рыбалка</a>
+                            <span class="green">[3]</span>
+                        </li>
+                        <li>
+                            <a href="#">Рафтинг</a>
+                            <span class="green">[151]</span>
+                        </li>
+                        <li>
+                            <a href="#">Серфинг</a>
+                            <span class="green">[240]</span>
+                        </li>
+                    </ul>
+                    <h3>Снег</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Ледолазание</a>
+                            <span class="green">[51]</span>
+                        </li>
+                        <li>
+                            <a href="#">Гонки на собаках</a>
+                            <span class="green">[70]</span>
+                        </li>
+                        <li>
+                            <a href="#">Лыжи</a>
+                            <span class="green">[296]</span>
+                        </li>
+                        <li>
+                            <a href="#">Ски-альпинизм</a>
+                            <span class="green">[47]</span>
+                        </li>
+                        <li>
+                            <a href="#">Сноуборд</a>
+                            <span class="green">[959]</span>
+                        </li>
+                        <li>
+                            <a href="#">Фрирайд</a>
+                            <span class="green">[83]</span>
+                        </li>
+                    </ul>
+                    <h3>Земля</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Автомотоспорт</a>
+                            <span class="green">[1131]</span>
+                        </li>
+                        <li>
+                            <a href="#">Велоспорт</a>
+                            <span class="green">[304]</span>
+                        </li>
+                        <li>
+                            <a href="#">Автостоп</a>
+                            <span class="green">[34]</span>
+                        </li>
+                        <li>
+                            <a href="#">Детский туризм</a>
+                            <span class="green">[11]</span>
+                        </li>
+                        <li>
+                            <a href="#">Мультиспорт</a>
+                            <span class="green">[243]</span>
+                        </li>
+                        <li>
+                            <a href="#">Охота</a>
+                            <span class="green">[24]</span>
+                        </li>
+                        <li>
+                            <a href="#">Ориентирование</a>
+                            <span class="green">[85]</span>
+                        </li>
+                        <li>
+                            <a href="#">Путешествие</a>
+                            <span class="green">[2382]</span>
+                        </li>
+                        <li>
+                            <a href="#">Страйкбол</a>
+                            <span class="green">[28]</span>
+                        </li>
+                        <li>
+                            <a href="#">Приключенческие гонки</a>
+                            <span class="green">[305]</span>
+                        </li>
+                        <li>
+                            <a href="#">Спелеология</a>
+                            <span class="green">[326]</span>
+                        </li>
+                    </ul>
+                    <h3>Воздух</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Парапланетаризм</a>
+                            <span class="green">[137]</span>
+                        </li>
+                    </ul>
+                    <div class="bottom-topics"></div>
+                </div>
+            </div>
+            <div id="content">
+                <h1>Календарь событий</h1>
+                <div class="select-month">
+                    <form name="select-month" method="post" action="">
+                        <select id="month-select">
+                            <option value="1" selected="selected">Сентябрь</option>
+                            <option value="2">Октябрь</option>
+                            <option value="3">Ноябрь</option>
+                            <option value="4">Декабрь</option>
+                        </select>
+                        <select id="year-select">
+                            <option value="1" selected="selected">2012</option>
+                            <option value="2">2013</option>
+                            <option value="3">2014</option>
+                        </select>
+                            <input type="submit" value="Показaть">
+                    </form>
+                </div>
+                <div class="clear"></div>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Январь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink day-events">9
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>10</td>
+                        <td class="three-events day-events">11
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right light-green day-events">14
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="pink day-events">18
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events day-events">23
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td class="four-events day-events">26
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom five-events day-events">31
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Февраль</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink day-events">9
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>10</td>
+                        <td class="three-events day-events">11
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right light-green day-events">14
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="pink day-events">18
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events day-events">23
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td class="four-events day-events">26
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom five-events day-events">31
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <ul>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events right" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Март</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right light-green day-events">14
+                            <div class="events">
+                                <div class="bg-top"></div>
+                                <div class="bg-bottom"></div>
+                                <div class="arrow"></div>
+                                <ul>
+                                    <li class="orange-event">
+                                        <a href="#">Международный фестиваль драйтулинга "Выборгский Микст"</a>
+                                    </li>
+                                    <li class="green-event">
+                                        <a href="#">Выставочный проект "RideThePlanet-2013"</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="pink">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Апрель</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Май</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events right" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Июнь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Июль</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Август</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events right" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Сентябрь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Октябрь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Ноябрь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="calendar-events right" border="0" cellpadding="0" cellspacing="0">
+                    <caption>Декабрь</caption>
+                    <tbody>
+                    <tr class="days">
+                        <th class="first">Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пн</th>
+                        <th class="weekend">Сб</th>
+                        <th class="weekend">Вс</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="right">7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="pink">9</td>
+                        <td>10</td>
+                        <td class="three-events">11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="right pink">14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="light-green">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="right">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="two-events">23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="right">28</td>
+                    </tr>
+                    <tr>
+                        <td class="table-bottom">29</td>
+                        <td class="table-bottom">30</td>
+                        <td class="table-bottom">31</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null table-bottom">&nbsp;</td>
+                        <td class="null right table-bottom">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+                </div>
+
+            <div class="bottom"></div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+        <ul id="menu-footer">
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">О нас</a>
+                    </li>
+                    <li >
+                        <a href="#">Наши партнеры</a>
+                    </li>
+                    <li >
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">Новости</a>
+                    </li>
+                    <li >
+                        <a href="#">Наша Россия</a>
+                    </li>
+                    <li >
+                        <a href="#">Технологии</a>
+                    </li>
+                    <li >
+                        <a href="#">Профессионалы</a>
+                    </li>
+                    <li >
+                        <a href="#">Для души</a>
+                    </li>
+                    <li >
+                        <a href="#">Законы</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">События</a>
+                    </li>
+                    <li >
+                        <a href="#">Предзаказы</a>
+                    </li>
+                    <li >
+                        <a href="#">Фестивали</a>
+                    </li>
+                    <li >
+                        <a href="#">Соревнования</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li >
+                        <a href="#">Форум</a>
+                    </li>
+                    <li >
+                        <a href="#">Группа Вконтакте</a>
+                    </li>
+                    <li >
+                        <a href="#">Группа Facebook</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+    <div class="clear"></div>
+    <div class="copyright">
+        <p><span>&copy; 2009-2013</span>"Russian Outdoor Group"</p>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
